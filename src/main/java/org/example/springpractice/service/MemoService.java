@@ -33,7 +33,7 @@ public class MemoService {
         List<MemoResponse> dtos = new ArrayList<>();
 
         for (Memo memo : memos) {
-            dtos.add(new MemoResponse(memo.getId(),  memo.getContent()));
+            dtos.add(new MemoResponse(memo.getId(), memo.getContent()));
         }
         return dtos;
     }

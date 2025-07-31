@@ -37,14 +37,14 @@ public class MemberController {
     public MemberResponseDto updateMember(
             @PathVariable Long memberId,
             @RequestBody MemberRequestDto memberRequestDto
-    ){
+    ) {
         return memberService.updateMember(memberId, memberRequestDto);
     }
 
     @DeleteMapping("/members/{memberId}")
     public void deleteMember(
             @PathVariable Long memberId
-    ){
+    ) {
         memberService.deleteMember(memberId);
     }
 }

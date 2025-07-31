@@ -39,8 +39,8 @@ public class MemoController {
     public MemoResponse updateMemo(
             @PathVariable Long memoId,
             @RequestBody MemoRequest memoRequest
-    ){
-        return memoService.updateMemo(memoId,memoRequest);
+    ) {
+        return memoService.updateMemo(memoId, memoRequest);
     }
 
     @DeleteMapping("/memos/{memoId}")
